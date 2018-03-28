@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D70EB02F206C4F5300FF0A4B /* piece_move_sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = D70EB02E206C4F5300FF0A4B /* piece_move_sound.wav */; };
 		D74BB3F1205AB1D000364875 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = D74BB3F0205AB1D000364875 /* ResourcePath.mm */; };
 		D74BB3F4205AB1D000364875 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D74BB3F3205AB1D000364875 /* main.cpp */; };
 		D74BB40E205AE12300364875 /* board.png in Resources */ = {isa = PBXBuildFile; fileRef = D74BB40D205AE12300364875 /* board.png */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D70EB02E206C4F5300FF0A4B /* piece_move_sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = piece_move_sound.wav; sourceTree = "<group>"; };
 		D74BB3EB205AB1D000364875 /* Chess on Sockets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chess on Sockets.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D74BB3EF205AB1D000364875 /* Chess on Sockets-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Chess on Sockets-Info.plist"; sourceTree = "<group>"; };
 		D74BB3F0205AB1D000364875 /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			children = (
 				D74BB40D205AE12300364875 /* board.png */,
 				D74BB413205AE37000364875 /* board0.png */,
+				D70EB02E206C4F5300FF0A4B /* piece_move_sound.wav */,
 				D74BB411205AE2B300364875 /* figures.png */,
 			);
 			name = Resources;
@@ -141,6 +144,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D70EB02F206C4F5300FF0A4B /* piece_move_sound.wav in Resources */,
 				D74BB40E205AE12300364875 /* board.png in Resources */,
 				D74BB414205AE37000364875 /* board0.png in Resources */,
 				D74BB412205AE2B300364875 /* figures.png in Resources */,
