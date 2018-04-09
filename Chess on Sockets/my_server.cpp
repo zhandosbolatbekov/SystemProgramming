@@ -11,7 +11,7 @@
 #include <iostream>
 #include <cstdlib>
     
-#define PORT 8888 
+#define PORT 8080 
 
 using namespace std;
 
@@ -19,6 +19,7 @@ const string WHITE = "white";
 const string BLACK = "black";
 const string GO = "GO";
 const string STOP = "STOP";
+const string FINISH = "FINISH";
 
 int sendTCP(int socket, string buf) {
     int n = send(socket, buf.c_str(), buf.size() + 1, 0);
@@ -94,7 +95,14 @@ int main(int argc, char *argv[])
         int waiting = client[turn ^ 1];
 
         recv(cur, buf, 1024, 0);
-        sendTCP(waiting, string(buf));
+
+        if(buf == FINISH) {
+            sendTCP(cur, FINISH);
+            sendTCP(waiting, FINISH);    
+            sendTCP(waiting, string(buf));
+        } else {    
+            sendTCP(waiting, string(buf));
+        }   
         cerr << buf << endl;
 
         turn ^= 1;
